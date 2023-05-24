@@ -1,0 +1,293 @@
+body {
+    font-family: Lato, sans-serif;
+    background-color: #dfe6e9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+h2 {
+    width: 60%;
+    margin: auto;
+    padding: 25px 0px;
+}
+
+#section1 {
+    width: 60%;
+    height: 250px;
+    margin: 15px auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.main_image {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    background-color: rgb(162, 155, 254);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elonmusk_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#totalAmount {
+    width: 60%;
+    margin: 0px auto 10px;
+    text-align: center;
+    background-color: rgb(108, 92, 231);
+    padding: 0px 15px;
+    position: sticky;
+    top: 5px;
+    z-index: 999;
+    box-shadow: rgb(108, 92, 231) 0px 25px 20px -15px;
+}
+
+h1 {
+    color: #fff;
+    margin: 21.44px 0;
+    padding: 15px 0;
+    font-size: 32px;
+}
+
+#cards {
+    width: 60%;
+    text-align: center;
+    margin: auto auto 20px;
+    padding: 0px 15px;
+}
+
+.card {
+    width: 280px;
+    height: fit-content;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(120, 120, 120, 0.35) 1.95px 1.95px 2.6px;
+    transition: all 0.2s ease 0s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.0);
+    box-shadow: 6px 2px 10px rgba(120, 120, 120, 0.5);
+}
+
+.cardImage {
+    width: 70%;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.cardName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.cardPrice {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #777;
+}
+
+.operations {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sellButton,
+.buyButton {
+    width: 30%;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sellButton,
+.buyButton:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+
+.sellButton {
+    background-color: #dcdcdc;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.buyButton {
+    background-color: #9a9bff;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sellButton.active {
+    background-color: red;
+    color: white;
+}
+
+.input {
+    width: 15%;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid #9a9bff;
+    text-align: center;
+    outline-color: #dcdcdc;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+#cartContainer {
+    width: 50%;
+    margin: 15px auto 65px;
+    text-align: center;
+    background-color: white;
+    padding: 15px 20px 20px;
+}
+
+
+
+#cartItems {
+    margin-top: 15px;
+    background-color: rgb(162, 155, 254);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+#cartItems>h3 {
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.border {
+    width: 80%;
+    margin: auto;
+    height: 1px;
+    border-bottom: 1px dashed rgb(255, 255, 255);
+}
+
+#total {
+    width: 80%;
+    margin: auto;
+}
+
+.footer_container {
+    width: 100%;
+    background-color: rgba(108, 92, 231, 0.5);
+    padding: 5px 0px 50px;
+}
+
+.footer_content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.card>svg {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, .82), 0 2px 16px 0 #fff;
+    color: rgba(0, 0, 0, .8);
+    font-size: 40px;
+    margin: 10px;
+    padding: 5px;
+    transition: color .2s, box-shadow 1s;
+}
+
+p {
+    padding: 10px;
+    height: 76%;
+    text-align: left;
+    margin: 0px;
+    overflow: auto;
+    font-size: 14px;
+}
+
+svg {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 hsla(0, 0%, 100%, .82), 0 2px 16px 0 #fff;
+    color: rgba(0, 0, 0, .8);
+    font-size: 40px;
+    margin: 10px;
+    padding: 5px;
+    transition: color .2s, box-shadow 1s;
+}
+
+img:hover {
+    box-shadow: rgba(90, 90, 63, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 100px -30px, rgba(90, 57, 64, 0.25) 0px -2px 6px 0px inset;
+}
+
+.text_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text:hover {
+    color: black;
+}
